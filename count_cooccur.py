@@ -29,7 +29,7 @@ def load_stop_words(filename):
         stop_words.add(line)
     print ("Added", len(stop_words), "stop words.")
     
-load_stop_words("/home1/w/why16gzl/KAIROS/event_abstraction/elmo/stop_words_en.txt")
+load_stop_words("./stop_words_en.txt")
 
 
 if "have" in stop_words:
@@ -98,7 +98,7 @@ def load_stop_words(filename):
         line = line.strip()
         stop_words.add(line)
     print ("Added", len(stop_words), "stop words.")
-load_stop_words("/home1/w/why16gzl/KAIROS/event_abstraction/elmo/stop_words_en.txt")
+load_stop_words("./stop_words_en.txt")
 
 mypath = '/shared/corpora-tmp/news_corpora/nyt/csv/'
 onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
